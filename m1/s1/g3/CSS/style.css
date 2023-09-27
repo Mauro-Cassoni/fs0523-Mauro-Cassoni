@@ -78,3 +78,7 @@ h2{
 li{
     margin: 10px;
 }
+
+a, a:visited{
+    color: rgba(16,119,119,255);
+}
