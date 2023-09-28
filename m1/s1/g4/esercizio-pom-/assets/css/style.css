@@ -25,6 +25,7 @@ h1{
 
 h2{
     font-size: 1.5em;
+    text-align: center;
 }
 
 h3{
@@ -38,7 +39,6 @@ article ul{
 
 #content{
     margin: 0 auto;
-    background-color: white;
 }
 
 p{
@@ -62,7 +62,7 @@ caption{
 }
 
 /* HEADER */
-header, footer{
+#header, footer{
     background: rgb(0,160,198);
     background: linear-gradient(0deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 100%);
     color: white;
@@ -102,7 +102,7 @@ td{
     padding: 10px;
 }
 
-tr:nth-child(odd) td {
+tr:nth-child(even) td {
     background-color: rgb(238, 238, 238);
     border-top: solid gray 1px;
     border-bottom: solid gray 1px;
@@ -129,7 +129,7 @@ main, footer{
 }
 
 #novita{
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(223 230 230);
     padding: 15px;
 }
 
@@ -137,14 +137,38 @@ main, footer{
     text-align: center;
 }
 
-in
+.input{
+    line-height: 1.5rem;
+}
 
-/* ELEMENTI NEL MAIN - ARTICLE */
+button{
+    line-height: 1.5rem;
+    background-color: rgb(58 112 194);
+    color: white;
+}
 
-/* TABELLE */
+.articoli{
+    background-color: #ccc;
+    padding: 15px;
+    border: solid gray 1px;
+    margin-bottom: 15px;
+}
 
-/* FORM */
+.articoli p{
+    margin: 0;
+}
 
-/* ELEMENTI NELL' ASIDE */
+.data{
+    margin: 20px;
+    text-align: end;
+}
+
+.data::before{
+    content: "";
+}
+
+.ticket::before{
+    content: "";
+}
 
 /* FOOTER */
