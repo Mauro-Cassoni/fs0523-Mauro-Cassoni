@@ -1,0 +1,150 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;700&display=swap');
+
+body{
+    margin: 25px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+    background-image: url(../img/sfondo.png);
+    background-attachment: fixed;
+
+}
+
+h1, h2, h3{
+    font-family: 'Onest', sans-serif;
+    margin: 20px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1em;
+}
+
+article ul{
+    list-style-type: disc;
+    margin-left: 50px;
+}
+
+#content{
+    margin: 0 auto;
+    background-color: white;
+}
+
+p{
+    margin: 20px 0;
+}
+
+strong{
+    color: rgb(170 32 114);
+}
+
+code{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(225 225 226);
+
+}
+
+caption{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* HEADER */
+header, footer{
+    background: rgb(0,160,198);
+    background: linear-gradient(0deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 100%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 35px;
+    box-shadow: 10px 10px 10px #dedede;
+}
+
+nav a:link, a:visited {
+        text-decoration: none;
+        color: white;
+}
+
+header div p{
+    margin: 20px;
+}
+
+.arrow::after{
+    content: "⇐";
+}
+
+.arrow::before{
+    content: "⇒";	
+}
+
+th{
+    background-color: rgb(56 105 205);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(odd) td {
+    background-color: rgb(238, 238, 238);
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+
+}
+
+/* MAIN */
+main, footer{
+    box-shadow: 3px 3px 3px #7a7a7a;
+    padding: 15px;
+    margin: 25px 0;
+    background-color: white;
+}
+
+.grey{
+    color: gray;
+}
+
+
+.video{
+    width: 100%;
+    border-radius: 25px;
+    margin: 25px 0;
+}
+
+#novita{
+    background-color: rgb(179, 179, 179);
+    padding: 15px;
+}
+
+#novita h2{
+    text-align: center;
+}
+
+in
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
