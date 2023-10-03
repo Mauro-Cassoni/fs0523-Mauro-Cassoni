@@ -3,7 +3,9 @@
 */
 
 {
-  let number = [25,54,183,2,87,10];
+  let num1 = 5;
+  let num2 = 10;
+  let number = [num1,num2];
   number.sort (function (a, b) {
     return b - a;
   });
@@ -46,8 +48,13 @@
 {
   let num1 = 15;
   let num2 = 7;
-  if(num1 = 8)
-}
+  if(num1 = 8) {
+    console.log ('uno dei numeri è uguale a 8');
+  } else if (num2 = 8) {
+    console.log ('uno dei numeri è uguale a 8'); //non funziona
+  }
+} 
+
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
