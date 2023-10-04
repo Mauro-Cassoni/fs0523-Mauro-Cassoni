@@ -20,7 +20,7 @@
 
 {
   let number = 6;
-  if(number !=5) {
+  if(number !==5) {
     console.log('not equal');
   }
 }
@@ -32,9 +32,8 @@
 */
 
 {
-  let number = 26;
-  let result = (number % 5);
-  if (result = 5) {
+  let number = 25;
+  if (number % 5 === 0) {
   console.log('divisibile per 5'); 
   }
 }
@@ -46,13 +45,11 @@
 */
 
 {
-  let num1 = 15;
-  let num2 = 7;
-  if(num1 = 8) {
-    console.log ('uno dei numeri è uguale a 8');
-  } else if (num2 = 8) {
-    console.log ('uno dei numeri è uguale a 8'); //non funziona
-  }
+  let y1 = 10
+  let y2 = 2
+
+  if (y1 === 8 || y2 === 8 || y1 + y2 === 8 || y1 - y2 === 8 || y2 - y1 === 8) {
+  console.log('verificato')
 } 
 
 
@@ -97,12 +94,29 @@ Modifica la risposta precedente includendo questa nuova promozione nell'algoritm
   Alla fine mostra il risultato in console.
 */
 
-// {
-//   let num1 = 15;
-//   let num2 = 35;
-//   let num3 = 10;
-//   if(num1 > num2 && num1 > num3) 
-// }
+{
+  if (z1 >= z2) {
+    if (z3 >= z1) {
+      console.log(z3, z1, z2)
+    } else {
+      if (z3 >= z2) {
+        console.log(z1, z3, z2)
+      } else {
+        console.log(z1, z2, z3)
+      }
+    }
+  } else {
+    if (z3 >= z2) {
+      console.log(z3, z2, z1)
+    } else {
+      if (z3 >= z1) {
+        console.log(z2, z3, z1)
+      } else {
+        console.log(z2, z1, z3)
+      }
+    }
+  }
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
