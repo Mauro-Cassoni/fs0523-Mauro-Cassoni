@@ -71,14 +71,15 @@ p, h3{
     align-content: center;
 }
 
-button{
+#button{
     background-color: var(--col-sfo-butt);
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 30px;
-    padding: 15px 25px;
+    padding: 15px;
     border-radius: 5px;
     border-style: none;
+    display: inline-block;
 }
 
 .sezioni2{
@@ -161,7 +162,7 @@ footer p{
 #line{
     margin: 30px auto;
     height: 1px;
-    width: 15%;
+    width: 350px;
     background-color: #c8e7f0;
 }
 

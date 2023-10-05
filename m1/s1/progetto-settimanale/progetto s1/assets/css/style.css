@@ -70,6 +70,7 @@ p{
     padding: 15px;
     border-radius: 5px;
     border-style: none;
+    display: inline-block;
 }
 
 .sezioni{
@@ -126,7 +127,6 @@ p{
     color: #c8e7f0;
     background-color: var(--col-sfo-foot);
     padding: 30px;
-    width: 400px;
     margin: 0 auto;
 }
 
@@ -141,8 +141,8 @@ footer p{
 #line{
     margin: 30px auto;
     height: 1px;
-    width: 60%;
     background-color: #c8e7f0;
+    width: 350px;
 }
 
 .crediti{

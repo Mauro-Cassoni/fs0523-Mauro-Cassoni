@@ -123,14 +123,14 @@ console.log(characters);
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
-{
-  let femaleCharacters = starWarsCharacters.find(starWarsCharacters => starWarsCharacters.gender === "female");
-  console.log(femaleCharacters);
-}
+// {
+//   let femaleCharacters = starWarsCharacters.find(starWarsCharacters => starWarsCharacters.gender === "female");
+//   console.log(femaleCharacters);
+// }
 
 let femaleCharacters = [];
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  if (starWarsCharacters.gender === 'female') {
+  if (starWarsCharacters[i].gender === 'female') {
     femaleCharacters.push(starWarsCharacters)
   }
 }
@@ -181,7 +181,7 @@ console.log(eyeColor.blue, eyeColor.yellow, eyeColor.brown, eyeColor.red,['eyeCo
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
 
-let crewMass;
+let crewMass = 0;
 
 let i = 0;
 while(i < starWarsCharacters.length) {
