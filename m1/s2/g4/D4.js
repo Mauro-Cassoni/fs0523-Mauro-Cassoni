@@ -69,7 +69,12 @@ console.log(boundary(110));
 */
 
 function epify(a){
-    let x = a.indexOf(EPICODE);
+    let y = a.split(" ");
+    if (y[0] == 'EPICODE'){
+        return (y. toString())
+    } else{
+        return ('EPICODE' + y.toString())
+    }
 
 }
 
