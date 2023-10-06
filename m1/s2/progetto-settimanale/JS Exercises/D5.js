@@ -99,13 +99,17 @@ console.log(cars);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-const justTrims = []
+const justTrims = [];
+
+
+// non capisco proprio perché mi dia errore...  
 
 // for (let i = 0; i < cars.length; i++) {
 //   justTrims.push(cars[i].trims[0]);
 // }
 
 // console.log(justTrims);
+
 
 
 
