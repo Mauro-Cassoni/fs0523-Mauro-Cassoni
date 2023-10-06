@@ -71,7 +71,7 @@ console.log(boundary(110));
 function epify(a){
     let y = a.split(" ");
     if (y[0] == 'EPICODE'){
-        return (y. toString())
+        return (y.toString())
     } else{
         return ('EPICODE' + y.toString())
     }
