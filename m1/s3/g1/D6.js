@@ -263,11 +263,22 @@ console.log(title(movies));
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
-
+// function millennio(array){
+//   let filmMillennio = array.filter(function(film) {
+//     return film.Year >= 2000 && film.Year <= 3000;
+//   });
+// }
+// console.log(millennio(movies));
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+function sommaAnni (array){
+  const somma = array.reduce(function(n1, n2) {
+    return accumulatore + elemento;
+  }, 0);
+}
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
