@@ -25,6 +25,6 @@ button.addEventListener("click",function(){
     })
 
 
-    lista.append(li, del);
+    lista.prepend(li, del);
     testo.value = '';
 });
