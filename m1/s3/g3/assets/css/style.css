@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --task-color: rgb(64, 172, 64);
+    --ok-color: rgb(243, 112, 112);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 15px;
+    color: white;
+
+}
+
+h1{
+    font-size: 3rem;
+    margin: 10px;
+    background-color: var(--task-color);
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#task{
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: rgb(128, 128, 128);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#testo{
+    height: 30px;
+    width: 400px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#button{
+    height: 36px;
+    width: 100px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+li{
+    max-width: 600px;
+    margin: 25px auto 5px auto;
+    padding: 5px;
+    border-radius: 15px;
+    list-style-type: none;
+    background: rgb(64,172,64);
+    background: linear-gradient(90deg, rgba(64,172,64,1) 0%, rgba(111,217,111,1) 50%, rgba(64,172,64,1) 100%);
+}
+
+.ok{
+    text-decoration:line-through;
+    color: rgb(199, 199, 199);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.del-item{
+    font-size: 0.8em;
+    background-color: var(--ok-color);
+    padding: 4px;
+    border-radius: 15px;
+}
