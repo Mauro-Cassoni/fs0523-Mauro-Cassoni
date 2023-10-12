@@ -2,13 +2,6 @@ let tabellone = document.querySelector('.tabellone');
 let bottoneNumero = document.querySelector('.bottoneNumero');
 let cartelle = document.querySelector('.cartelle')
 let bottoneCartella = document.querySelector('.bottoneCartella')
-
-
-
-
-
-
-
 let numeroC = cartelle.querySelectorAll('.numero-cartella');
 
 for(i = 1; i <= 76; i++){
