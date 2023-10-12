@@ -48,12 +48,16 @@ h3{
     background-color: var(--coloreEstratto);
 }
 
-.bottoneNumero{
+.bottoneNumero, .bottoneCartella{
     background-color: var(--coloreBordo);
     color: white;
     font-size: 0.8em;
     border-radius: 10px;
     padding: 10px;
+}
+
+.bottoneCartella{
+    background-color: var(--coloreCartella);
 }
 
 .numero-cartella{
