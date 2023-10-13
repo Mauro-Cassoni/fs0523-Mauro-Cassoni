@@ -454,6 +454,18 @@ function searchAndDivide(string){
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
+function removeIndex(index) {
+  if (index < 0 || index >= movies.length) {
+    console.log("Index not found!");
+    return movies;
+  }
+
+  movies.splice(index, 1);
+
+  return movies;
+}
+
+
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
@@ -517,7 +529,7 @@ function addInMyList(){
 
 function emptyMyList(){
   let myList = document.querySelector('#myList');
-  
+
   while (myList.firstChild) {
     myList.removeChild(myList.firstChild);
   }
@@ -526,6 +538,15 @@ function emptyMyList(){
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+
+function addTest(){
+let tr = document.querySelectorAll('tr');
+
+  for (let i = 0; i < tr.length; i++) {
+    tr[i].classList.add('test');
+  }
+
+}
 
 // [EXTRA] JS Avanzato
 
@@ -541,6 +562,16 @@ function emptyMyList(){
 
 */
 
+function halfTree(number){
+  for (let i = 1; i <= number; i++) {
+    let string = '';
+    for (var x = 1; x <= i; x++) {
+      string += '*';
+    }
+    console.log(riga);
+  }
+}
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -552,6 +583,16 @@ function emptyMyList(){
   *****
 
 */
+
+function tree(number){
+  for (let i = 1; i <= number; i++) {
+    let string = '';
+    for (var x = 1; x <= i; x++) {
+      string += '*';
+    }
+    console.log(riga);
+  }
+}
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
