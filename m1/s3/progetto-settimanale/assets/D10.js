@@ -568,7 +568,7 @@ function halfTree(number){
     for (var x = 1; x <= i; x++) {
       string += '*';
     }
-    console.log(riga);
+    return string;
   }
 }
 
@@ -587,16 +587,30 @@ function halfTree(number){
 function tree(number){
   for (let i = 1; i <= number; i++) {
     let string = '';
-    for (var x = 1; x <= i; x++) {
-      string += '*';
-    }
-    console.log(riga);
+    let leaves = '*';
+    return
   }
 }
+
+// _____________________________________________da rivedere_______________________________________________________
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+
+function isItPrime(number){
+  switch (true) {
+    case number <= 1:
+      return false;
+    case number <= 3:
+      return true;
+    case number % 2 === 0 || number % 3 === 0:
+      return false;
+    
+
+  }
+
+}
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
