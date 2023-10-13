@@ -592,7 +592,7 @@ function tree(number){
   }
 }
 
-// _____________________________________________da rivedere_______________________________________________________
+// _____________________________________________da finire_______________________________________________________
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
@@ -606,11 +606,13 @@ function isItPrime(number){
       return true;
     case number % 2 === 0 || number % 3 === 0:
       return false;
-    
+
 
   }
 
 }
+
+// _______________________________________________da finire________________________________________________________________________
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
