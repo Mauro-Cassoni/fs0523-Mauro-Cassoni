@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+
+:root{
+    --colorTxt: #612406;
+    --colorButtonPC: #F3DF85;
+    --colorBgPC: #FBF7E3;
+}
+
+#body{
+    color: var(--colorTxt);
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 25px 0 25px 0;
+}
+
+h4{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 65px 0 65px 0;
+}
+
+/* ____________________________PRODUCT CARD____________________________________ */
+.productCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    border-radius: 70px;
+    background-color: var(--colorBgPC);
+    gap: 20px;
+
+    height: 400px;
+    /* width: 300px; */
+}
+
+.bgProductCard{
+    background-image: url('../imgs/honey.jpg');
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    height: 250px;
+    width: 100%;
+}
+
+.botProductCard{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.titleSecProductCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.priceProductCard{
+    font-size: 1.2em;
+}
+
+.buttonProductCard{
+    font-size: 1em;
+    background-color: var(--colorButtonPC);
+    border-radius: 30px;
+    border: none;
+    padding: 10px 35px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--colorTxt);
+}
+
+/* ____________________________NAVIGATION BAR__________________________________ */
+#navBar{
+    display: flex;
+    background-color: var(--colorBgPC);
+    padding: 25px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navBarButton{
+    background-color: var(--colorButtonPC);
+    border-radius: 100px;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+#Shop{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#Shop img{
+    height: 80px;
+}
+
+/* ________________________________ARTICLE____________________________________ */
+#article{
+    display: flex;
+    background-color: var(--colorBgPC);
+    padding: 25px;
+    border-radius: 25px;
+    gap: 25px
+    ;
+}
+
+#articleTxt{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,68 @@
+@media screen and (max-width: 576px){
+    #body{
+        padding: 25px;
+    }
+    
+    #navBar{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .navBarButton{
+        background-color: var(--colorButtonPC);
+        border-radius: 100px;
+        padding: 15px 25px;
+    }
+    
+    #OurHoney{
+        order: 2;
+        flex-basis: 30%;
+    }
+    
+    #TraceHoney{
+        order: 3;
+        flex-basis: 30%;
+    }
+    
+    #Shop{
+        order: 1;
+        flex-basis: 50%;
+        padding: 35px;
+    }
+    
+    #Shop img{
+        height: 50px;
+    }
+    
+    #Facilities{
+        order: 4;
+        flex-basis: 30%;
+    }
+    
+    #Contacts{
+        order: 5;
+        flex-basis: 30%;
+    }
+
+    .productCard{
+        max-width: 80%;
+        margin: 25px auto;
+    }
+
+    #article{
+        text-align: left;
+        flex-direction: column;
+    }
+
+    #article img{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #navBar{
+        width: 100%;
+        gap: 15px;
+    }
+
+}

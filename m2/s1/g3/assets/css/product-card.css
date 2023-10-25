@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+
+:root{
+    --colorTxt: #612406;
+    --colorButtonPC: #F3DF85;
+    --colorBgPC: #FBF7E3;
+}
+
+body{
+    color: var(--colorTxt);
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* ____________________________PRODUCT CARD____________________________________ */
+.productCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    border-radius: 100px;
+    background-color: var(--colorBgPC);
+    gap: 20px;
+
+    height: 400px;
+    width: 300px;
+}
+
+.bgProductCard{
+    background-image: url('../imgs/honey.jpg');
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    height: 250px;
+    width: 100%;
+}
+
+.botProductCard{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.titleSecProductCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleProductCard{
+
+}
+
+.des1ProductCard{
+
+
+}
+
+.priceProductCard{
+    font-size: 1.2em;
+}
+
+.buttonProductCard{
+    font-size: 1em;
+    background-color: var(--colorButtonPC);
+    border-radius: 30px;
+    border: none;
+    padding: 10px 35px;
+}
