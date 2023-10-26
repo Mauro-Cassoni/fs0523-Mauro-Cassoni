@@ -1,0 +1,120 @@
+:root {
+    --giallo: #fefece;
+    --verde: #ccfece;
+    --viola: #cacafa;
+    font-family: 'Indie Flower';
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#lavagna{
+    background-color: #666666;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-evenly;
+    padding: 50px;
+    gap: 50px;
+}
+
+.task1, .task5, .task7{
+    background-image: linear-gradient(var(--giallo) 0%, var(--giallo) 75%, #bdbda3 90%, #bdbda3 100%);
+    transform: rotate(354deg);
+}
+
+.task2, .task4, .task8{
+    background-image: linear-gradient(var(--verde) 0%, var(--verde) 75%, #a1b8a1 90%, #a1b8a1 100%);
+    transform: rotate(13deg);
+}
+
+.task8{
+    transform: rotate(4deg);
+}
+
+.task3, .task6{
+    background-image: linear-gradient(var(--viola) 0%, var(--viola) 75%, #8b8c9b 90%, #8b8c9b 100%);
+    transform: rotate(345deg);
+}
+
+.task{
+    flex-basis: 340px;
+    height: 240px;
+    box-shadow: 4px 8px 12px 5px rgba(0,0,0,0.66);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.task:hover{
+    transform: scale(1.5);
+    z-index: 3;
+    box-shadow: 22px 15px 11px 11px rgba(0,0,0,0.73);
+}
+
+@keyframes scendi {
+    0% {transform: scale(10.1);}
+    100% {transform: scale(1.1);}
+}
+
+.task1{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+.task2{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.9s;
+}
+
+.task3{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 1.8s;
+}
+
+.task4{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 2.7s;
+}
+
+.task5c{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 3.6s;
+}
+
+.task6c{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 4.5s;
+}
+
+.task7c{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 5.4s;
+}
+
+.task8c{
+    animation-name: scendi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 6.3s;
+}

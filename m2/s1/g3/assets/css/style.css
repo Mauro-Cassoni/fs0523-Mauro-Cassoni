@@ -14,6 +14,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 h2{
@@ -44,7 +45,6 @@ h4{
     gap: 20px;
 
     height: 400px;
-    /* width: 300px; */
 }
 
 .bgProductCard{
@@ -88,7 +88,7 @@ a{
 }
 
 /* ____________________________NAVIGATION BAR__________________________________ */
-#navBar{
+#navBarUl{
     display: flex;
     background-color: var(--colorBgPC);
     padding: 25px;
@@ -107,9 +107,16 @@ a{
 #Shop{
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 40px;
     font-weight: bold;
     font-size: 1.5em;
+}
+
+#Shop a{
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 #Shop img{
