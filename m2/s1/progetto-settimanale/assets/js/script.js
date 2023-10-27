@@ -9,7 +9,7 @@ window.addEventListener("scroll",function(){
         button.classList.add('green');
     } else {
         header.classList.remove('white');
-        header.classList.remove('green');
+        button.classList.remove('green');
     }
 
 })

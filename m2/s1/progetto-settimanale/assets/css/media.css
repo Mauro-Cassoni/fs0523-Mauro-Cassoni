@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px){ 
+#svgmmm{
+right: -90px;
+}
+.container, .container3, #heroSection, #main{
+    width: 90vw;
+}
+
+#provaHeroSection{
+    justify-content: flex-start;
+}
+
+.container2{
+    margin-left: 40px;
+}
+
+.article6{
+    flex-basis: 300px;
+}
+
+.mainArticle7{
+    flex-basis: 100%;
+}
+
+.dxSide{
+    display: none;
+}
+
+}

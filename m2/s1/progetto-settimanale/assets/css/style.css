@@ -63,7 +63,6 @@ ul{
     border-radius: 25px;
     padding: 12px 17px;
     transition: background-color 0.5s;
-
 }
 
 .white{
@@ -85,7 +84,6 @@ ul{
     justify-content: space-between;
     flex-basis: 62vw;
     height: 462px;
-    border-bottom: 1px solid var(--colorBlack);
 }
 
 #provaHeroSection{
@@ -121,9 +119,16 @@ h1{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     flex-basis: 50%;
 }
+
+
+.startButton{
+    text-align: center;
+    width: 150px;
+}
+
 
 #sxHeroSection p{
     font-size: 2rem;
@@ -146,7 +151,7 @@ svg{
     flex-basis: 62Vw;
     justify-content: center;
     gap: 15px;
-    border-bottom: 0.5px solid var(--colorGreyNumberButton);
+    border-bottom: 1px solid var(--colorGreyNumberButton);
     padding: 50px;
 }
 
