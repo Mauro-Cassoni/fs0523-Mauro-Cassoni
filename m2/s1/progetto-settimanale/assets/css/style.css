@@ -38,9 +38,16 @@ ul{
 }
 
 #header{
-    background-color: var(--colorYellow);
     border-bottom: 1px solid var(--colorBlack);
     height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.yellow{
+    background-color: var(--colorYellow);
+    transition: background-color 0.5s;
 }
 
 #headerNav{
@@ -55,7 +62,18 @@ ul{
     background-color: var(--colorBlack);
     border-radius: 25px;
     padding: 12px 17px;
+    transition: background-color 0.5s;
 
+}
+
+.white{
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+.green{
+    background-color: var(--colorGreen);
+    transition: background-color 0.5s;
 }
 
 /* ______________________________________________________ HERO SECTION ________________________________________________________ */
@@ -64,18 +82,19 @@ ul{
 #heroSection{
     background-color: var(--colorYellow);
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 462px;
     border-bottom: 1px solid var(--colorBlack);
+}
+
+.prova{
+    
 }
 
 .container2{
     align-self: center;
     display: flex;
-    flex-basis: 62vw;
     height: 462px;
-    justify-content: center;
-    position: relative;
 }
 
 h1{
@@ -88,6 +107,7 @@ h1{
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
+    flex-basis: 50%;
 }
 
 #sxHeroSection p{
@@ -97,10 +117,10 @@ h1{
 
 svg{
     width: 100%;
-    height: 100%; 
-    transform: translate3d(0px, 0px, 0px); 
-    right: 0px;
-    content-visibility: visible;
+    height: 100%;
+    /* transform: translate3d(0px, 0px, 0px);  */
+    /* right: 0px; */
+    /* content-visibility: visible; */
 }
 
 /* ______________________________________________________ ARTICLE 6 ________________________________________________________ */
@@ -167,7 +187,7 @@ svg{
 }
 
 #section{
-    flex-basis: 60%;
+    flex-basis: 70%;
 }
 
 .article7{
@@ -175,10 +195,99 @@ svg{
 }
 
 .mainArticle7{
+    display: flex;
+    flex-direction: column;
     flex-basis: 60%;
+    gap: 15px;
 }
 
 .imgArticle7{
     width: 200px;
+    margin: 15px;
+}
+
+
+.authorName{
+    font-weight: bold;
+}
+
+.titleArticle{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.contentArticle7{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.underTxtArticle{
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.greyTxt{
+    color: var(--colorGreyTxt);
+}
+
+.subjectArticle7{
+    background-color: var(--colorGreyNumberButton);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.bookmarkArticle{
+    align-self: flex-end;
+}
+
+
+.asideButton{
+    background-color: var(--colorGreyNumberButton);
+    padding: 15px;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+#aside{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 0.5px solid var(--colorGreyNumberButton);
+
+}
+
+#aside p{
+    flex-basis: 100%;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.greenAside{
+    color: var(--colorGreen);
+    margin: 25px;
+}
+
+
+.dxSide{
+    flex-basis: 30%;
+    align-self:flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ______________________________________________________ FOOTER DESKTOP ________________________________________________________ */
+
+#desktopFooter{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+#desktopFooter a{
+    color: var(--colorGreyTxt);
 }
 
