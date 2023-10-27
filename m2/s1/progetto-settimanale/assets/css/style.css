@@ -82,13 +82,28 @@ ul{
 #heroSection{
     background-color: var(--colorYellow);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-basis: 62vw;
     height: 462px;
     border-bottom: 1px solid var(--colorBlack);
 }
 
+#provaHeroSection{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorYellow);
+    border-bottom: 1px solid var(--colorBlack);
+}
+
 .prova{
-    
+    position: relative;
+}
+
+#svgmmm{
+position: absolute;
+height: 462px;
+top:70px;
+right: -700px;
 }
 
 .container2{
