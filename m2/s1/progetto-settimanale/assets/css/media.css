@@ -1,6 +1,12 @@
-@media screen and (max-width: 768px){ 
+@media screen and (min-width: 768px){ 
+h1{
+    font-size: 4rem;
+}
+
 #svgmmm{
 right: -90px;
+display: none;
+
 }
 .container, .container3, #heroSection, #main{
     width: 90vw;
@@ -18,12 +24,37 @@ right: -90px;
     flex-basis: 300px;
 }
 
-.mainArticle7{
-    flex-basis: 100%;
+.container3{
+    order: 2;
 }
 
-.dxSide{
+.article7{
+    flex-basis: 100%;
+    
+}
+
+#desktopFooter{
     display: none;
 }
 
+.dxSide{
+    flex-basis: 100%;
+    order: 1;
+}
+
+
+}
+
+@media screen and (min-width: 1000px){
+
+    #svgmmm{
+        display: none;
+    }
+    .container, .container3, #heroSection, #main{
+        width: 70vw;
+    } 
+
+.article6{
+    flex-basis: 100%;
+}
 }
