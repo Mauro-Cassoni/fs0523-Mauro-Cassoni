@@ -42,7 +42,7 @@ ul{
     height: 75px;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 10;
 }
 
 .yellow{
@@ -186,9 +186,10 @@ svg{
     font-weight: bold;
 }
 
-.undetTxt{
+.underTxt{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .author{
@@ -200,6 +201,55 @@ svg{
 .author img{
     border-radius: 100%;
     height: 25px;
+}
+
+.windowContainer{
+    position: relative;
+}
+
+.quadratoBianco{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    box-shadow: 3px 0px 8px 2px rgba(0,0,0,0.7);
+    position: absolute;
+    transform: rotate(45deg);
+    top: -110px;
+    left: 120px;
+    z-index: 4;
+}
+
+.window{
+    position: absolute;
+    background-color: white;
+    box-shadow: 3px 0px 8px 2px rgba(0,0,0,0.7);
+    border-radius: 15px;
+    padding: 15px;
+    height: 130px;
+    width: 300px;
+    top: -170px;
+    left: 120px;
+    z-index: 5;
+}
+
+.window .underTxt{
+    color: var(--colorGreyTxt);
+}
+
+.window .author{
+    margin: 10px;
+}
+
+.followButton{
+    background-color: var(--colorGreen);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.none{
+    display: none;
 }
 
 /* ______________________________________________________ ARTICLE 7 ________________________________________________________ */
@@ -313,6 +363,8 @@ svg{
 }
 
 /* ______________________________________________________ KEYFRAMES ________________________________________________________ */
+
+
 
 
 

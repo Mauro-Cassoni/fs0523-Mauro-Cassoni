@@ -11,5 +11,31 @@ window.addEventListener("scroll",function(){
         header.classList.remove('white');
         button.classList.remove('green');
     }
-
 })
+
+
+let autori = document.getElementsByClassName("author");
+let windowContainers = document.getElementsByClassName("windowContainer");
+
+
+function rimuoviClasseNone() {
+    for (let i = 0; i < windowContainers.length; i++) {
+    windowContainers[i].classList.remove("none");
+    }
+}
+
+function ripristinaClasseNone() {
+    for (let i = 0; i < windowContainers.length; i++) {
+    windowContainers[i].classList.add("none");
+    }
+}
+
+for (let i = 0; i < autori.length; i++) {
+    autori[i].addEventListener("mouseenter", rimuoviClasseNone);
+    autori[i].addEventListener("mouseleave", ripristinaClasseNone);
+}
+
+for (let i = 0; i < windowContainers.length; i++) {
+    windowContainers[i].addEventListener("mouseenter", rimuoviClasseNone);
+    windowContainers[i].addEventListener("mouseleave", ripristinaClasseNone);
+}
