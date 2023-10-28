@@ -1,31 +1,36 @@
-@media screen and (max-width: 768px){ 
+@media screen and (min-width: 425px) and (max-width: 768px){ 
 h1{
     font-size: 4rem;
 }
 
 #svgmmm{
-right: -90px;
-display: none;
-
+    left: 330px;
 }
-.container, .container3, #heroSection, #main{
+.container, .container3, #main{
     width: 90vw;
 }
 
-#provaHeroSection{
-    justify-content: flex-start;
+#section{
+    flex-basis: 90vw;
 }
 
-.container2{
-    margin-left: 40px;
+#heroSection{
+    flex-basis: 60vw;
+    margin-left: 50px;
+}
+
+
+#provaHeroSection{
+    justify-content: flex-start;
 }
 
 .article6{
     flex-basis: 300px;
 }
 
-.container3{
+section{
     order: 2;
+    padding: 50px 0 50px 0;
 }
 
 .article7{
@@ -42,19 +47,62 @@ display: none;
     order: 1;
 }
 
-
+#containerForTablet{
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 1000px){
+#aside{
+    padding-bottom: 25px;
+}
 
-    #svgmmm{
-        display: none;
-    }
-    .container, .container3, #heroSection, #main{
-        width: 70vw;
-    } 
-
-.article6{
+.greenAside {
+    color: var(--colorGreen);
+    margin-top: 25px;
     flex-basis: 100%;
+
 }
+
+#footerMobile{
+    display: flex;
+    flex-basis: 100vw;
+    justify-content: center;
+    background-color: #191919;
+    padding: 25px;
+}
+
+.flex a{
+    color: white;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 90vw;
+    gap: 25px;
+}
+
+#footer4{
+    display: flex;
+    flex-basis: 90vw;
+    gap: 25px;
+}
+
+#logoFooter{
+    filter: invert(100%);
+}
+
+.buttonLoad{
+    justify-content: center;
+    display: flex;
+}
+
+.buttonLoad a{
+    color: #191919;
+    padding: 15px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    border: 1px solid #191919;
+}
+
 }
