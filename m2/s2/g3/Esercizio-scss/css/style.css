@@ -54,10 +54,6 @@ table {
   border-spacing: 0;
 }
 
-.header {
-  background-color: #640fc5;
-}
-
 .mt-10 {
   margin-top: 10px;
 }
@@ -240,11 +236,9 @@ a {
 
 .col {
   flex-direction: column;
-}
-.col .col {
   display: flex;
   flex-wrap: wrap;
 }
-.col .col > div {
+.col > div {
   width: 50%;
 }
