@@ -1,0 +1,77 @@
+$misure: 10, 20, 30;
+
+@each $m in $misure{
+    .mt-#{$m} {
+        margin-top: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .mb-#{$m} {
+        margin-bottom: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .ml-#{$m} {
+        margin-left: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .mr-#{$m} {
+        margin-right: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .mx-#{$m} {
+        margin-right: $m + px;
+        margin-left: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .my-#{$m} {
+        margin-top: $m + px;
+        margin-bottom: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .pt-#{$m} {
+        padding-top: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .pb-#{$m} {
+        padding-bottom: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .pl-#{$m} {
+        padding-left: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .pr-#{$m} {
+        padding-right: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .px-#{$m} {
+        padding-right: $m + px;
+        padding-left: $m + px;
+    }
+}
+
+@each $m in $misure{
+    .py-#{$m} {
+        padding-top: $m + px;
+        padding-bottom: $m + px;
+    }
+}

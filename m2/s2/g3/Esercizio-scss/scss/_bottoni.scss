@@ -1,0 +1,17 @@
+@mixin blueButton {
+    background-color: map-get($color-map, blueB);
+    padding: 15px 25px 15px 25px;
+    color: map-get($colorTxt-map, whiteB);
+}
+
+@mixin orangeButton {
+    background-color: map-get($color-map, orangeB);
+    padding: 15px 25px 15px 25px;
+    color: map-get($colorTxt-map, whiteB);
+}
+
+@mixin greenButton {
+    background-color: map-get($color-map, greenB);
+    padding: 15px 25px 15px 25px;
+    color: map-get($colorTxt-map, whiteB);
+}
