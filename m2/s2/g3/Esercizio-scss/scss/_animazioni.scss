@@ -1,0 +1,11 @@
+@mixin fadeIn($duration: 1s, $delay: 0s){
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity $duration, transform $duration;
+    transition-delay: $delay;
+
+    &.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
