@@ -54,6 +54,10 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  background-color: #640fc5;
+}
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -208,4 +212,39 @@ table {
 .py-30 {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+
+a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.header {
+  background-color: #640fc5;
+  justify-content: space-between;
+}
+
+.heroSection {
+  background-color: #640fc5;
+}
+
+.col {
+  flex-direction: column;
+}
+.col .col {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col .col > div {
+  width: 50%;
 }

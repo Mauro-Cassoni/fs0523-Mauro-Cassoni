@@ -4,11 +4,12 @@
     border: $border solid map-get($colorTxt-map, whiteB);
 }
 
-@mixin grid($padre){
+@mixin grid($padre, $numero){
     .#{$padre} {
         display: flex;
-        div{
-            width: calc(100% / 6);
+        flex-wrap: wrap;
+        >div{
+            width: calc(100% / $numero);
         }
     }
 }

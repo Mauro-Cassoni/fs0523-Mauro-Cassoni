@@ -5,3 +5,32 @@
 @import 'bottoni';
 @import 'mixin';
 @import 'animazioni';
+
+:root{
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color: map-get($colorTxt-map, whiteB);
+}
+
+a{
+    color: map-get($colorTxt-map, whiteB);
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.header{
+    background-color: map-get($color-map, purpleB);
+    justify-content: space-between;
+}
+
+.heroSection{
+    background-color: map-get($color-map, purpleB);
+}
+
+.col{
+    flex-direction: column;
+    @include grid(.col, 2)
+}
