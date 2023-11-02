@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;700&display=swap');
+
+@mixin roboto400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin roboto700 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+@mixin sometypeMono400 {
+    font-family: 'Sometype Mono', monospace;
+    font-weight: 400;
+}
+
+@mixin sometypeMono700 {
+    font-family: 'Sometype Mono', monospace;
+    font-weight: 700;
+}
+
+@mixin title-big {
+    font-size: 4rem;
+}
