@@ -11912,6 +11912,8 @@ textarea.form-control-lg {
   }
 }
 
-#splide, .splide__list {
-  width: 100vW;
+.mioFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }

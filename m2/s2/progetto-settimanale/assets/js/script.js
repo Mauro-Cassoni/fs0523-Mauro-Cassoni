@@ -1,6 +1,6 @@
 var splide = new Splide('.splide', {
     type: 'loop',
-    perPage: 3,
+    perPage: 1,
     autoplay: true,
 });
 
