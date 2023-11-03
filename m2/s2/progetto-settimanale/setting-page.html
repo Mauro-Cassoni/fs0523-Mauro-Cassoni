@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Netflix - Tv Shows</title>
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logoNetflix" src="./assets/media2/netflix_logo.png"
+                        alt="logo netflix"></a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="col navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./index.html">Tv Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">My List</a>
+                        </li>
+                        </ul>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form class="ricercaMobile" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                        <form class="ricercaDesktop" role="search">
+                            <input id="inputDesktop" class="form-control me-2" type="search" placeholder="Cerca"
+                                aria-label="Search">
+                            <button id="buttonRicercaDesktop" class="btn text-light" type="submit"><i
+                                    class="bi bi-search"></i></button>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">KIDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#"><i class="bi bi-bell-fill"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="immagineProfiloNavbar" src="./assets/media2/avatar.png"
+                                    alt="immagine profilo">
+                                <span class="NomeProfiloNavbar">Mauro Cassoni</span>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="./profile-page.html">Mauro Cassoni</a></li>
+                                <li><a class="dropdown-item" href="#">Download</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./setting-page.html">Impostazioni</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

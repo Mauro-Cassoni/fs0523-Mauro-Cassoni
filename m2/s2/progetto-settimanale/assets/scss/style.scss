@@ -1,0 +1,67 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'media';
+
+
+#body{
+    color: white;
+}
+
+
+// _______________________________________ HEADER _______________________________________________________
+.logoNetflix{
+    height: 50px;
+}
+
+.immagineProfiloNavbar{
+    height: 30px;
+    @include breakpoint(992){
+
+    }
+}
+
+.NomeProfiloNavbar{
+    @include breakpoint(992){
+        display: none;
+    }
+}
+
+.ricercaDesktop{
+    display: none;
+    @include breakpoint(992){
+        display: flex;
+    }
+}
+
+.ricercaMobile{
+    display: flex;
+    @include breakpoint(992){
+        display: none;
+    }
+}
+
+#inputDesktop{
+    opacity: 0;
+}
+
+.ricercaDesktop:hover{
+    #inputDesktop{
+        opacity: 1;
+    }
+}
+
+.active{
+    font-weight: bold;
+}
+
+.sectionDx{
+    display: none;
+    @include breakpoint(768){
+        display: flex;
+        align-self: flex-end;
+    }
+}
+
+#splide, .splide__list{
+    width: 100vW;
+}

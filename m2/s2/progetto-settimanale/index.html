@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Netflix - Tv Shows</title>
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logoNetflix" src="./assets/media2/netflix_logo.png"
+                        alt="logo netflix"></a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="col navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#">Tv Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">My List</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form class="ricercaMobile" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                        <form class="ricercaDesktop" role="search">
+                            <input id="inputDesktop" class="form-control me-2" type="search" placeholder="Cerca"
+                                aria-label="Search">
+                            <button id="buttonRicercaDesktop" class="btn text-light" type="submit"><i
+                                    class="bi bi-search"></i></button>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">KIDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#"><i class="bi bi-bell-fill"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="immagineProfiloNavbar" src="./assets/media2/avatar.png"
+                                    alt="immagine profilo">
+                                <span class="NomeProfiloNavbar">Mauro Cassoni</span>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="./profile-page.html">Mauro Cassoni</a></li>
+                                <li><a class="dropdown-item" href="#">Download</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./setting-page.html">Impostazioni</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-dark p-2">
+        <div class="container-fluid row">
+            <div class="col d-flex justify-content-start gap-3 col">
+                <h2>TV Shows</h2>
+                <div class="btn nav-item dropdown bg-black border-white">
+                    <button class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span>Generi</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Film</a></li>
+                        <li><a class="dropdown-item" href="#">Serie Tv</a></li>
+                        <li><a class="dropdown-item" href="#">Documentari</a></li>
+                        <li><a class="dropdown-item" href="#">Bambini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col sectionDx">
+                <a href="#" class="btn border-white text-white"><i class="bi bi-card-list"></i></a>
+                <a href="#" class="btn border-white text-white"><i class="bi bi-grid-fill"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark p-2">
+        <div>
+            <h3 class="container-fluid">Trending Now</h3>
+        </div>
+        <section id="splide" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list row">
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media0.webp" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media1.jpg" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media2.webp" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media3.webp" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media4.jpg" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media5.webp" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media6.jpg" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media7.webp" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media8.webp" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media9.jpg" alt="copertina film"></a></li>
+                    <li class="col splide__slide"><a href="#"><img src="./assets/media/media10.jpg" alt="copertina film"></a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+
+
+
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
