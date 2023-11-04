@@ -15,7 +15,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="logoNetflix" src="./assets/media2/netflix_logo.png"
                         alt="logo netflix"></a>
-                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,6 @@
                             <a class="nav-link text-light" href="#">My List</a>
                         </li>
                         </ul>
-
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <form class="ricercaMobile" role="search">
                             <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
@@ -73,12 +72,60 @@
                                 <li><a class="dropdown-item" href="./setting-page.html">Impostazioni</a></li>
                             </ul>
                         </li>
-
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </nav>
     </header>
+
+    <main>
+        <div class="container">
+            <h4 class="border-bottom border-secondary">Edit Profile</h4>
+            <div class="row">
+                <div class="col"><img class="imgIconProfile my-3" src="./assets/media2/avatar.png" alt=""></div>
+                <div class="col">
+                    <form>
+                        <div class="border-bottom border-secondary py-3">
+                            <input type="text" value="Mauro Cassoni" class="inputName">
+                            <p class="titolettiProfilePage">Language:</p>
+                            <div class="btn nav-item dropdown bg-black border-white">
+                                <button class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>Inglese</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Italiano</a></li>
+                                    <li><a class="dropdown-item" href="#">Francese</a></li>
+                                    <li><a class="dropdown-item" href="#">Tedesco</a></li>
+                                    <li><a class="dropdown-item" href="#">Spagnolo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="border-bottom border-secondary py-3">
+                            <p class="titolettiProfilePage my-3">Maturity Settings:</p>
+                            <a href="#" class="maturityButton bg-secondary removeTxtDecor text-light p-1 my-3">ALL MATURITY RATINGS</a>
+                            <p class="my-3">Show titles of <span class="bold">all maturity ratings</span> for this profile.</p>
+                            <a href="#" class="btn btn-outline-light bg-black text-secondary">EDIT</a>
+                        </div>
+
+                        <div class="py-3">
+                            <p class="titolettiProfilePage">Autoplay Controls</p>
+                            <div><input type="checkbox" name="checkboxAutoplay1" id="checkboxAutoplay1"><span>Autoplay next episode in a series on all devices.</span></div>
+                            <div><input type="checkbox" name="checkboxAutoplay2" id="checkboxAutoplay2"><span>Autoplay previews while browsing on all devices.</span></div>
+                        </div>
+                        <div class="border-top border-secondary py-3">
+                            <button class=" m-1 btn text-black bg-white btn-outline-secondary">SAVE</button>
+                            <button class=" m-1 btn text-secondary bg-black btn-outline-secondary">CANCEL</button>
+                            <button class=" m-1 btn text-secondary bg-black btn-outline-secondary">DELETE PROFILE</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
 
 
 

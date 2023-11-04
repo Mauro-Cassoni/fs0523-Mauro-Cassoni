@@ -1,54 +1,7 @@
 @mixin breakpoint($misura){
 
-    @if($misura == 280){
-        @media screen and (min-width: 280px){
-            @content;
-        }
+    @media screen and (min-width: $misura){
+        @content;
     }
-    @else if($misura == 320){
-        @media screen and (min-width: 320px){
-            @content;
-        }
-    }
-    @else if($misura == 480){
-        @media screen and (min-width: 480px){
-            @content;
-        }
-    }
-    @else if($misura == 768){
-        @media screen and (min-width: 768px){
-            @content;
-        }
-    }
-    @else if($misura == 992){
-        @media screen and (min-width: 992px){
-            @content;
-        }
-    }
-    @else if($misura == 1024){
-        @media screen and (min-width: 1024px){
-            @content;
-        }
-    }
-    @else if($misura == 1280){
-        @media screen and (min-width: 1280px){
-            @content;
-        }
-    }
-    @else if($misura == 1360){
-        @media screen and (min-width: 1360px){
-            @content;
-        }
-    }
-    @else if($misura == 1440){
-        @media screen and (min-width: 1440px){
-            @content;
-        }
-    }
-    @else if($misura == 1680){
-        @media screen and (min-width: 1680px){
-            @content;
-        }
-    }
-    
+
 }

@@ -11857,6 +11857,11 @@ textarea.form-control-lg {
 }
 #body {
   color: white;
+  background-color: #212529;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .logoNetflix {
@@ -11902,6 +11907,11 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
+.mioFlexTop {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sectionDx {
   display: none;
 }
@@ -11912,8 +11922,60 @@ textarea.form-control-lg {
   }
 }
 
+.imgIconProfile {
+  height: 150px;
+}
+
+h4, .h4 {
+  font-size: 3rem;
+}
+@media screen and (min-width: 345px) {
+  h4, .h4 {
+    font-size: 4rem;
+  }
+}
+
+.inputName {
+  color: white;
+  background-color: gray;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+.inputName:hover {
+  color: black;
+  background-color: white;
+}
+
+.titolettiProfilePage {
+  color: gray;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.maturityButton {
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.mioContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .mioFlex {
   display: flex;
   flex-direction: row;
   gap: 15px;
+}
+
+.removeTxtDecor {
+  text-decoration: none;
+}
+
+.removeListStyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
