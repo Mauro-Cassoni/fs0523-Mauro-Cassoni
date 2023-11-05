@@ -3,72 +3,74 @@
 @import 'media';
 
 
-#body{
+#body {
     color: white;
     background-color: $dark;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
 // _______________________________________ HEADER _______________________________________________________
-.logoNetflix{
+.logoNetflix {
     height: 50px;
 }
 
-.immagineProfiloNavbar{
+.immagineProfiloNavbar {
     height: 30px;
-    @include breakpoint(992px){
 
-    }
+    @include breakpoint(992px) {}
 }
 
-.NomeProfiloNavbar{
-    @include breakpoint(992px){
+.NomeProfiloNavbar {
+    @include breakpoint(992px) {
         display: none;
     }
 }
 
-.ricercaDesktop{
+.ricercaDesktop {
     display: none;
-    @include breakpoint(992px){
+
+    @include breakpoint(992px) {
         display: flex;
     }
 }
 
-.ricercaMobile{
+.ricercaMobile {
     display: flex;
-    @include breakpoint(992px){
+
+    @include breakpoint(992px) {
         display: none;
     }
 }
 
-#inputDesktop{
+#inputDesktop {
     opacity: 0;
 }
 
-.ricercaDesktop:hover{
-    #inputDesktop{
+.ricercaDesktop:hover {
+    #inputDesktop {
         opacity: 1;
     }
 }
 
-.active{
+.active {
     font-weight: bold;
 }
 
 
 // _______________________________________ MAIN _______________________________________________________
 
-.mioFlexTop{
+.mioFlexTop {
     display: flex;
     justify-content: space-between;
 }
 
-.sectionDx{
+.sectionDx {
     display: none;
-    @include breakpoint(768px){
+
+    @include breakpoint(768px) {
         display: flex;
         align-self: flex-end;
     }
@@ -76,64 +78,67 @@
 
 // _______________________________________ MAIN PROFILE PAGE ______________________________________________
 
-.imgIconProfile{
+.imgIconProfile {
     height: 150px;
 }
 
-h4{
+h4 {
     font-size: 3rem;
-    @include breakpoint(345px){
+
+    @include breakpoint(345px) {
         font-size: 4rem;
     }
 }
 
-.inputName{
+.inputName {
     color: white;
     background-color: gray;
     border-radius: 3px;
     border: none;
     padding: 5px;
     font-size: 1.2rem;
-    &:hover{
+
+    &:hover {
         color: black;
         background-color: white;
     }
 }
 
-.titolettiProfilePage{
+.titolettiProfilePage {
     color: gray;
     padding: 0;
     font-size: 1.2rem;
 }
 
-.maturityButton{
+.maturityButton {
     font-weight: bold;
     border-radius: 3px;
 }
 
 
-// _______________________________________ FOOTER _______________________________________________________
+
+// ___________________________________ FOOTER _______________________________________________________
 
 
 
 
-.mioContainer{
+.mioContainer {
     display: flex;
     // flex-wrap: wrap;
     justify-content: center;
 }
 
-.mioFlex{
+.mioFlex {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
-.removeTxtDecor{
+.removeTxtDecor {
     text-decoration: none;
 }
 
-.removeListStyle{
+.removeListStyle {
     list-style: none;
     margin: 0;
     padding: 0;
