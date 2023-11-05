@@ -11860,6 +11860,11 @@ textarea.form-control-lg {
   background-color: #212529;
 }
 
+#bodySetting {
+  color: #212529;
+  background-color: white;
+}
+
 .bold {
   font-weight: bold;
 }
