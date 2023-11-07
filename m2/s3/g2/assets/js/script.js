@@ -1,14 +1,20 @@
 let addButton = document.querySelector('#addButton');
 let deleteButton = document.querySelector('#deleteButton');
 let inputName = document.querySelector('#inputName');
+let savedName = document.querySelector('#savedName');
 
 
-addButton.addEventListener('click', function () {
+addButton.addEventListener('click', function (event) {
+    event.preventDefault()
     localStorage.setItem('nome', inputName.value)
+    savedName.innerHTML = inputName.value
+    inputName.value = ''
 });
 
-deleteButton.addEventListener('click', function () {
+deleteButton.addEventListener('click', function (event) {
+    event.preventDefault()
     localStorage.removeItem('nome');
+    savedName.innerHTML = ''
 });
 
 
