@@ -55,7 +55,7 @@ const petForm = document.getElementById('petForm');
         const petTable = document.getElementById('petTable');
 
         // Aggiungi un evento di click al pulsante di invio
-        const submitButton = document.getElementById('submitButton');
+        let submitButton = document.getElementById('submitButton');
         submitButton.addEventListener('click', function() {
             const petName = document.getElementById('petName').value;
             const ownerName = document.getElementById('ownerName').value;
