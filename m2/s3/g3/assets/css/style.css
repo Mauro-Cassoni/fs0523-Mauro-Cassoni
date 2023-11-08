@@ -1,0 +1,11 @@
+ul{
+    list-style-type: none;
+}
+
+.card{
+    width: 18rem;
+}
+
+.none{
+    display: none;
+}
