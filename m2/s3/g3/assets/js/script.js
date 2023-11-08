@@ -1,40 +1,37 @@
 class Libro {
-    constructor(img,titolo,prezzo){
+    constructor(img, titolo, prezzo) {
         this.img = img;
         this.titolo = titolo;
-        this. prezzo = prezzo;
-        this.cloneTemplate()
-        this.compileCard()
-        this.delete()
+        this.prezzo = prezzo;
+        this.cloneTemplate();
+        this.compileCard();
+        this.delete();
     }
+    
     cloneTemplate() {
         const template = document.getElementsByTagName("template")[0].content;
-    
         const clone = template.cloneNode(true);
-    
         const cloneContainer = document.getElementById("containerTemplate");
-    
-        cloneContainer.prepend(clone);
+        cloneContainer.appendChild(clone);
     }
 
     compileCard() {
-        let immagine = document.querySelector('img')
-        immagine.src = this.img
-        let titolo = document.querySelector('.card-title')
-        titolo.innerHTML = this.titolo
-        let prezzo = document.querySelector('.book-price')
-        prezzo.innerHTML = this.prezzo + '€'
-
+        const card = document.querySelector('.card:last-of-type');
+        const immagine = card.querySelector('img');
+        immagine.src = this.img;
+        const titolo = card.querySelector('.card-title');
+        titolo.innerHTML = this.titolo;
+        const prezzo = card.querySelector('.book-price');
+        prezzo.innerHTML = this.prezzo + '€';
     }
 
-    delete(){
-        let buttonScarta = document.querySelector('.button-scarta')
-        buttonScarta.addEventListener('click', function(){
-            let card = document.querySelector('.card')
-            card.remove()
-        })
+    delete() {
+        const card = document.querySelector('.card:last-of-type');
+        const buttonScarta = card.querySelector('.button-scarta');
+        buttonScarta.addEventListener('click', function() {
+            card.remove();
+        });
     }
-    
 }
 
 fetch('https://striveschool-api.herokuapp.com/books')
