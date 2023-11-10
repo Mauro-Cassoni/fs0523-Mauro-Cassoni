@@ -1,3 +1,11 @@
+let buttonLoadImage = document.querySelector('.buttonLoadImage')
+let buttonLoadSecondary = document.querySelector('.buttonLoadSecondary')
+
+buttonLoadImage.addEventListener('click', () => {
+    let query = 'dog';
+})
+
+
 let query = 'japan';
 
 let image = async (query) => {
@@ -12,7 +20,7 @@ let image = async (query) => {
 
     if (Array.isArray(body.photos)) {
         body.photos.forEach(photo => {
-            new Card(photo.src.large);
+            new Card(photo.src.tiny);
         });
     } else {
         console.error('I dati dell\'API non contengono un array di foto.');
