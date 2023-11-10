@@ -4,7 +4,9 @@ const KEY = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRkZTA0MTI
 let addBtn = document.querySelector('.addButton');
 let resetButton = document.querySelector('.resetButton');
 
-addBtn.addEventListener('click', function () {
+addBtn.addEventListener('click', function (e) {
+
+    e.preventDefault();
 
     //PRENDO TUTTI I VALORI DEL FORM
     let name = document.querySelector('#validationCustom01').value;

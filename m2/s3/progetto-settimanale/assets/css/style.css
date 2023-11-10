@@ -11863,7 +11863,7 @@ textarea.form-control-lg {
   background-color: #47141E;
 }
 
-h3, .h3 {
+h3, .h3, .borderBottomPrimary {
   border-bottom: 3px solid #47141E;
 }
 
@@ -11871,6 +11871,6 @@ h3, .h3 {
   width: 18rem;
 }
 
-.none {
-  display: none;
+a {
+  text-decoration: none;
 }

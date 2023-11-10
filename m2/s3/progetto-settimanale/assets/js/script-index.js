@@ -8,10 +8,8 @@ fetch(LINK, {
         "Authorization": KEY,
     }
 })
-    .then(res => res.json(e))
+    .then(res => res.json())
     .then(phones => {
-
-        e.preventDefault();
 
         phones.forEach((phone, i) => {
             cloneTemplate()
@@ -25,19 +23,21 @@ function cloneTemplate(nr = `0`) {
     const clone = template.cloneNode(true);
     const cloneContainer = document.getElementById(`target${nr}`);
     cloneContainer.appendChild(clone);
+    return clone;
 }
 
 
-function compilePhone(phone){
-const card = document.querySelector('.card:last-of-type');
-const immagine = card.querySelector('img');
-immagine.src = phone.img;
-const titolo = card.querySelector('#nameProduct');
-titolo.innerHTML = phone.name;
-const prezzo = card.querySelector('#priceProduct');
-prezzo.innerHTML = phone.price + '€';
-const description = card.querySelector('#descriptionProduct');
-description.innerHTML = phone.description;
-const brandProduct = card.querySelector('#brandProduct');
-brandProduct.innerHTML = phone.brand;
+function compilePhone(phone) {
+    const clone = document.querySelector('.card:last-of-type'); // Seleziona l'ultimo clone invece di utilizzare la classe .card
+    const immagine = clone.querySelector('img');
+    immagine.src = phone.img;
+    console.log(immagine);
+    const titolo = clone.querySelector('#nameProduct');
+    titolo.innerHTML = phone.name;
+    const prezzo = clone.querySelector('#priceProduct');
+    prezzo.innerHTML = phone.price + '€';
+    const description = clone.querySelector('#descriptionProduct');
+    description.innerHTML = phone.description;
+    const brandProduct = clone.querySelector('#brandProduct');
+    brandProduct.innerHTML = phone.brand;
 }
