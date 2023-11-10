@@ -1,0 +1,7 @@
+@mixin breakpoint($misura){
+
+    @media screen and (min-width: $misura){
+        @content;
+    }
+
+}

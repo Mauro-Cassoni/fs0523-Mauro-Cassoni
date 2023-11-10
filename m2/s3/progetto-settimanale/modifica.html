@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Modifica prodotti - EpiPhone</title>
+</head>
+
+<body>
+
+    <div class="bg-red">
+    <header class="container-fluid">
+            <nav class="py-0 navbar navbar-expand-lg bg-body-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="./assets/img/Logo.png"
+                            alt="EpiPhone Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Accedi
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Accedi come utente</a></li>
+                                    <li><a class="dropdown-item" href="aggiungi.html">Accedi come amministratore</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container my-5">
+        <h3 class="my-5 py-3">Aggiungi prodotto</h3>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-12">
+                <label for="validationCustom01" class="form-label">Nome prodotto</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="invalid-feedback">
+                    Inserisci il nome del prodotto.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="validationCustom02" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="invalid-feedback">
+                    Inserisci la marca del prodotto.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="validationCustom05" class="form-label">Immagine</label>
+                <input type="text" class="form-control" id="validationCustom04" required>
+                <div class="invalid-feedback">
+                    Inserisci la foto del prodotto.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="validationCustom05" class="form-label">Prezzo</label>
+                <input type="number" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Inserisci il prezzo del prodotto.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="validationCustom03" class="form-label">Descrizione</label>
+                <textarea type="text" class="form-control" id="validationCustom03" required></textarea>
+                <div class="invalid-feedback">
+                    Inserisci la descrizione del prodotto.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="addButton btn btn-primary" type="submit">Aggiungi</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/validation.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

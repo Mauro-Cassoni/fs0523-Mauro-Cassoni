@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'media';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.logo{
+    height: 90px;
+}
+
+.bg-red{
+    background-color: $primary;
+}
+
+h3{
+    border-bottom: 3px solid $primary;
+}
