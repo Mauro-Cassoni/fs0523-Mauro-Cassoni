@@ -11866,3 +11866,11 @@ textarea.form-control-lg {
 h3, .h3 {
   border-bottom: 3px solid #47141E;
 }
+
+.card {
+  width: 18rem;
+}
+
+.none {
+  display: none;
+}

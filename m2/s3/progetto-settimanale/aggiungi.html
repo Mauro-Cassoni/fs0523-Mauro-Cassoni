@@ -12,7 +12,7 @@
 <body>
 
     <div class="bg-red">
-    <header class="container-fluid">
+        <header class="container-fluid">
             <nav class="py-0 navbar navbar-expand-lg bg-body-primary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img class="logo" src="./assets/img/Logo.png"
@@ -29,13 +29,14 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Accedi
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Accedi come utente</a></li>
-                                    <li><a class="dropdown-item" href="aggiungi.html">Accedi come amministratore</a></li>
+                                    <li><a class="dropdown-item" href="adminChoice.html">Accedi come amministratore</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -50,54 +51,59 @@
         </header>
     </div>
 
-    <div class="container my-5">
-        <h3 class="my-5 py-3">Aggiungi prodotto</h3>
-        <form class="row g-3 needs-validation" novalidate>
-            <div class="col-12">
-                <label for="validationCustom01" class="form-label">Nome prodotto</label>
-                <input type="text" class="form-control" id="validationCustom01" required>
-                <div class="invalid-feedback">
-                    Inserisci il nome del prodotto.
-                </div>
-            </div>
+    <main>
 
-            <div class="col-12">
-                <label for="validationCustom02" class="form-label">Marca</label>
-                <input type="text" class="form-control" id="validationCustom02" required>
-                <div class="invalid-feedback">
-                    Inserisci la marca del prodotto.
+        <div class="container my-5">
+            <h3 class="my-5 py-3 text-primary">Aggiungi prodotto</h3>
+            <form id="myForm" class="row g-3 needs-validation" novalidate>
+                <div class="col-12">
+                    <label for="validationCustom01" class="form-label">Nome prodotto</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="invalid-feedback">
+                        Inserisci il nome del prodotto.
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-12">
-                <label for="validationCustom05" class="form-label">Immagine</label>
-                <input type="text" class="form-control" id="validationCustom04" required>
-                <div class="invalid-feedback">
-                    Inserisci la foto del prodotto.
+                <div class="col-12">
+                    <label for="validationCustom02" class="form-label">Marca</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                        Inserisci la marca del prodotto.
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-12">
-                <label for="validationCustom05" class="form-label">Prezzo</label>
-                <input type="number" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    Inserisci il prezzo del prodotto.
+                <div class="col-12">
+                    <label for="validationCustom05" class="form-label">Immagine</label>
+                    <input type="text" class="form-control" id="validationCustom04" required>
+                    <div class="invalid-feedback">
+                        Inserisci la foto del prodotto.
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-12">
-                <label for="validationCustom03" class="form-label">Descrizione</label>
-                <textarea type="text" class="form-control" id="validationCustom03" required></textarea>
-                <div class="invalid-feedback">
-                    Inserisci la descrizione del prodotto.
+                <div class="col-12">
+                    <label for="validationCustom05" class="form-label">Prezzo</label>
+                    <input type="number" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Inserisci il prezzo del prodotto.
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-12">
-                <button class="addButton btn btn-primary" type="submit">Aggiungi</button>
-            </div>
-        </form>
-    </div>
+                <div class="col-12">
+                    <label for="validationCustom03" class="form-label">Descrizione</label>
+                    <textarea type="text" class="form-control" id="validationCustom03" required></textarea>
+                    <div class="invalid-feedback">
+                        Inserisci la descrizione del prodotto.
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <button class="addButton btn btn-primary" type="submit">Aggiungi</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
 
 
 

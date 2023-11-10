@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Gestisci prodotti - EpiPhone</title>
+    <title>Amministratore - EpiPhone</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Accedi come utente</a></li>
-                                    <li><a class="dropdown-item" href="adminChoice.html">Accedi come amministratore</a>
+                                    <li><a class="dropdown-item" href="adminPage.html">Accedi come amministratore</a>
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -51,39 +51,25 @@
         </header>
     </div>
 
-    <div class="container my-5">
-        <h3 class="my-5 py-3">Gestisci prodotti</h3>
+    <main>
+        <div class="container my-5">
+            <h3 class="my-5 py-3 text-primary">EpiPhone - Sezione amministratore</h3>
 
-        <div id="target0" class="row"></div>
 
-        <template>
-            <div class="card col-md-4 m-3">
-                <img src="..." class="card-img-top" alt="foto telefono">
-                <div class="card-body">
-                    <h5 id="nameProduct" class="card-title">Nome prodotto</h5>
-                    <p id="descriptionProduct" class="card-text">Descrizione</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li id="brandProduct" class="list-group-item">Marca</li>
-                    <li id="priceProduct" class="list-group-item">Prezzo</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="col-12 mx-0 my-2 btn btn-primary card-link">Aggiungi al Carrello</a>
-                    <a href="#" class="col-12 mx-0 my-2 btn btn-warning card-link">Dettagli</a>
-                </div>
+            <div>
+                <a href="aggiungi.html" class="addButton btn btn-primary my-3" type="submit">Aggiungi nuovo prodotto</a>
+                <a href="modifica.html" class="addButton btn btn-primary my-3" type="submit">Gestisci prodotti</a>
             </div>
-        </template>
 
 
 
-    </div>
-
+        </div>
+    </main>
 
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/validation.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script-admin.js"></script>
 </body>
 
 </html>

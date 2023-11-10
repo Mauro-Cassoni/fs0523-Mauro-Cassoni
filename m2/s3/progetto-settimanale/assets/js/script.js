@@ -2,10 +2,9 @@ const LINK = 'https://striveschool-api.herokuapp.com/api/product/'
 const KEY = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRkZTA0MTI1NGU4ODAwMTgzZjE4NjUiLCJpYXQiOjE2OTk2MDI0OTcsImV4cCI6MTcwMDgxMjA5N30.uhqYWIoMloYMqF8_ehiAfaDV4ulDZ37VcyxV8VQ6Yoo"
 
 let addBtn = document.querySelector('.addButton');
+let resetButton = document.querySelector('.resetButton');
 
-addBtn.addEventListener('click', function (e) {
-
-    e.preventDefault();
+addBtn.addEventListener('click', function () {
 
     //PRENDO TUTTI I VALORI DEL FORM
     let name = document.querySelector('#validationCustom01').value;
@@ -37,7 +36,7 @@ addBtn.addEventListener('click', function (e) {
         .then(res => res.json())
         .then(phones => {
 
-            
+
 
 
             //ho deciso di fare un redirect se la pizza viene creata correttamente, potevo anche mostrare un avviso
@@ -45,16 +44,4 @@ addBtn.addEventListener('click', function (e) {
 
         })
 
-
 })
-
-
-
-
-// fetch(link, {
-//     headers: {
-//         "Authorization": key
-//     }
-// })
-
-
