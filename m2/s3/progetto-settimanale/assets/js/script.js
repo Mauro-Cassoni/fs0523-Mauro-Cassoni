@@ -38,12 +38,20 @@ addBtn.addEventListener('click', function (e) {
         .then(res => res.json())
         .then(phones => {
 
-
-
-
-            //ho deciso di fare un redirect se la pizza viene creata correttamente, potevo anche mostrare un avviso
-            // location.href = '/index.html';
+            Swal.fire({
+                icon: "success",
+                text: `Prodotto aggiunto correttamente!`
+            }).then(() => { location.reload() });
 
         })
 
 })
+
+resetButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#validationCustom01').value = '';
+    document.querySelector('#validationCustom02').value = '';
+    document.querySelector('#validationCustom03').value = '';
+    document.querySelector('#validationCustom04').value = '';
+    document.querySelector('#validationCustom05').value = '';
+});

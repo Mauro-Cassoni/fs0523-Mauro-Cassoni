@@ -28,10 +28,9 @@ function cloneTemplate(nr = `0`) {
 
 
 function compilePhone(phone) {
-    const clone = document.querySelector('.card:last-of-type'); // Seleziona l'ultimo clone invece di utilizzare la classe .card
-    const immagine = clone.querySelector('img');
-    immagine.src = phone.img;
-    console.log(immagine);
+    const clone = document.querySelector('.card:last-of-type');
+    const immagine = clone.querySelector('.card-img-top');
+    immagine.src = phone.imageUrl;
     const titolo = clone.querySelector('#nameProduct');
     titolo.innerHTML = phone.name;
     const prezzo = clone.querySelector('#priceProduct');
