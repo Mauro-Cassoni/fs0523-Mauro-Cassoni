@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Home - EpiPhone</title>
+    <title>Aggiungi prodotto - EpiPhone</title>
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Accedi come utente</a></li>
-                                    <li><a class="dropdown-item" href="adminPage.html">Accedi come amministratore</a>
+                                    <li><a class="dropdown-item" href="adminChoice.html">Accedi come amministratore</a>
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -52,37 +53,48 @@
     </div>
 
     <main>
+
         <div class="container my-5">
-            <h3 class="my-5 py-3 text-primary">EpiPhone - I nostri Smartphone</h3>
+            <h3 class="my-5 py-3 text-primary">Dettagli prodotto</h3>
+                <div class="col-12 my-3">
+                    <div class="fs-4 text-primary borderBottomLite">Nome prodotto</div>
+                    <span id="validationCustom01" class="fs-5 text-dark"></span>
 
-            <div id="target0" class="row"></div>
-
-            <template>
-                <div class="card col-md-4 m-3 p-3">
-                    <img src="https://picsum.photos/seed/picsum/200/200" class="card-img-top rounded" alt="foto telefono">
-                    <div class="card-body">
-                        <h5 id="nameProduct" class="card-title">Nome prodotto</h5>
-                        <p id="descriptionProduct" class="card-text">Descrizione</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li id="brandProduct" class="list-group-item">Marca</li>
-                        <li id="priceProduct" class="list-group-item">Prezzo</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="col-12 mx-0 my-2 btn btn-primary card-link">Aggiungi al Carrello</a>
-                        <a href="#" class="col-12 mx-0 my-2 btn btn-warning card-link buttonDettagli">Dettagli</a>
-                    </div>
+                <div class="col-12 my-3">
+                    <div class="fs-4 text-primary borderBottomLite">Marca</div>
+                    <span id="validationCustom02" class="fs-5 text-dark"></span>
                 </div>
-            </template>
 
+                <div class="col-12 my-3">
+                    <div class="fs-4 text-primary borderBottomLite">Foto prodotto</div>
+                    <img src="" class="rounded my-2 border border-primary" id="validationCustom04">
+                </div>
+
+                <div class="col-12 my-3">
+                    <div class="fs-4 text-primary borderBottomLite">Prezzo in €</div>
+                    <span id="validationCustom05" class="fs-5 text-dark"></span>
+                </div>
+
+                <div class="col-12 my-3">
+                    <div class="fs-4 text-primary borderBottomLite">Descrizione</div>
+                    <span id="validationCustom03" class="fs-5 text-dark"></span>
+                </div>
+
+                <div class="col-2 my-5">
+                    <a href="index.html" class="btn btn-primary" type="submit">Torna alla Home</a>
+                </div>
+
+            </form>
         </div>
+
     </main>
 
 
 
+
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/validation.js"></script>
-    <script src="./assets/js/script-index.js"></script>
+    <script src="./assets/js/script-dettagli.js"></script>
 </body>
 
 </html>

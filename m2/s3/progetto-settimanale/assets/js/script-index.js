@@ -39,4 +39,10 @@ function compilePhone(phone) {
     description.innerHTML = phone.description;
     const brandProduct = clone.querySelector('#brandProduct');
     brandProduct.innerHTML = phone.brand;
+    compileButton(clone,phone)
+}
+
+function compileButton(clone, phone) {
+    let buttonDettagli = clone.querySelector('.buttonDettagli');
+    buttonDettagli.href = 'dettagli.html?id=' + phone._id;
 }

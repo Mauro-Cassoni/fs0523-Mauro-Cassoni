@@ -14,6 +14,10 @@ h3, .borderBottomPrimary{
     border-bottom: 3px solid $primary;
 }
 
+.borderBottomLite{
+    border-bottom: 1px solid $primary;
+}
+
 .card{
     width: 290px;
     height: 650px;
