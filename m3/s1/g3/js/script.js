@@ -23,5 +23,5 @@ class TasseDipendente extends Tasse {
 }
 let lavoratore = new TasseDipendente(78, 27000, 26, 23);
 console.log(lavoratore);
-console.log('Il reddito annuo netto del lavoratore è di', lavoratore.getRedditoAnnuoNetto());
+console.log(`Il reddito annuo netto del lavoratore è di ${lavoratore.getRedditoAnnuoNetto()}€`);
 //# sourceMappingURL=script.js.map
