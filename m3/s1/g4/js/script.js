@@ -37,6 +37,8 @@ function getCapi() {
         data.forEach((c) => {
             let capo = new Capo(c.id, c.codprod, c.collezione, c.capo, c.modello, c.quantita, c.colore, c.prezzoivaesclusa, c.prezzoivainclusa, c.disponibile, c.saldo);
         });
+        console.log(capo.getSaldoCapo);
+        console.log(capo.getAcquistoCapo);
         return data;
     });
 }

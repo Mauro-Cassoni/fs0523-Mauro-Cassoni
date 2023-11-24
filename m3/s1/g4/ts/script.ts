@@ -44,7 +44,8 @@ async function getCapi(): Promise<Capo[]> {
         );
     });
 
-
+    console.log(capo.getSaldoCapo);
+    console.log(capo.getAcquistoCapo);
     
     return data;
 }
