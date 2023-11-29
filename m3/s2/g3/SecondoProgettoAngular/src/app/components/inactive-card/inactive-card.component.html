@@ -1,0 +1,17 @@
+<div class="card" [style.backgroundColor]="post.type == 'news' ? 'yellow' : post.type=='politics' ? 'black' : 'blue'" *ngFor="let post of posts" style="width: 18rem; ">
+  <div class="card-header">
+    Post
+  </div>
+
+  <div>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{post.title}}</li>
+      <li class="list-group-item">{{post.body}}</li>
+      <li class="list-group-item">{{post.active}}</li>
+      <button class="btn btn-primary" (click)="post.active = !post.active" [innerText]="post.active ? 'Disattiva' : 'Attiva'"></button>
+    </ul>
+
+
+  </div>
+</div>
