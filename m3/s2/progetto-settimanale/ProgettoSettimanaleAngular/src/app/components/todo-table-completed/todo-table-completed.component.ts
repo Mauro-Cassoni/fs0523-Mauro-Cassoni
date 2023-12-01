@@ -3,17 +3,17 @@ import { ITodo } from '../../Models/itodo';
 import { TodosService } from '../../services/todos.service';
 
 @Component({
-  selector: '.app-todo-table',
-  templateUrl: './todo-table.component.html',
-  styleUrl: './todo-table.component.scss'
+  selector: '.app-todo-table-completed',
+  templateUrl: './todo-table-completed.component.html',
+  styleUrl: './todo-table-completed.component.scss'
 })
-export class TodoTableComponent {
+export class TodoTableCompletedComponent {
   todos: ITodo[] = [];
 
   constructor(private todoSvc: TodosService) { }
 
   ngOnInit() {
-    this.todoSvc.getTodo().then(todos => this.todos = todos)
+    this.todoSvc.getTodoCompleted().then(todos => this.todos = todos)
   }
 
   changeDone(todo:ITodo){

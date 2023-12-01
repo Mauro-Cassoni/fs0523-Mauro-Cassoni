@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CreateComponent } from './components/create/create.component';
 import { FormsModule } from '@angular/forms';
 import { TodoTableComponent } from './components/todo-table/todo-table.component';
+import { TodoTableCompletedComponent } from './components/todo-table-completed/todo-table-completed.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TodoTableComponent } from './components/todo-table/todo-table.component
     CompletatiComponent,
     HeaderComponent,
     CreateComponent,
-    TodoTableComponent
+    TodoTableComponent,
+    TodoTableCompletedComponent
   ],
   imports: [
     BrowserModule,

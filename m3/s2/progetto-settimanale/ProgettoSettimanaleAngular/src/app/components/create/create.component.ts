@@ -18,23 +18,18 @@ export class CreateComponent {
     completed: false
   };
 
-  oldTodo: ITodo | null = null;
-
   loading: boolean = false;
 
   save() {
     this.loading = true;
-
     this.todoSvc.create(this.newTodo).then(res => {
       this.loading = false
-      this.oldTodo = res;
       this.newTodo = {
         completed: false
       }
 
-      setTimeout(()=>{
-        this.router.navigate(['/'])
-      },2000)
     })
   }
+
+
 }

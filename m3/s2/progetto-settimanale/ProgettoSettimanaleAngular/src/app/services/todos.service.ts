@@ -9,12 +9,16 @@ export class TodosService {
 
   apiUrl: string = 'http://localhost:3000/todo';
 
-  // getAll(): Promise<ITodo[]> {
-  //   return fetch(this.apiUrl).then(res => res.json())
-  // }
+  getAll(): Promise<ITodo[]> {
+    return fetch(this.apiUrl).then(res => res.json())
+  }
 
-  getTodo(){
+  getTodo(): Promise<ITodo[]> {
+    return this.getAll().then(todos => todos.filter(todo => !todo.completed));
+  }
 
+  getTodoCompleted(): Promise<ITodo[]> {
+    return this.getAll().then(todos => todos.filter(todo => todo.completed));
   }
 
   todos:ITodo[] = [];
@@ -30,7 +34,7 @@ export class TodosService {
   }
 
   changeStatus(todo: ITodo): Promise<ITodo> {
-    const url = `this.apiUrl${todo.id}`;
+    const url = `http://localhost:3000/todo/${todo.id}`;
 
     return fetch(url, {
       method: 'PUT',
@@ -41,14 +45,23 @@ export class TodosService {
     })
       .then((res) => res.json())
       .then((updatedTodo: ITodo) => {
-        // Opzionale: Aggiorna la lista locale dei todos con il todo appena aggiornato
-        // const index = this.todos.findIndex((t) => t.id === updatedTodo.id);
-        // if (index !== -1) {
-        //   this.todos[index] = updatedTodo;
-        // }
+
+        const index = this.todos.findIndex((t) => t.id === updatedTodo.id);
+        if (index !== -1) {
+          this.todos[index] = updatedTodo;
+        }
 
         return updatedTodo;
       });
+  }
+
+  delete(id:number):Promise<ITodo>{
+    return fetch(this.apiUrl+`/${id}`,{
+      method:'DELETE',
+      headers:{
+        'Content-Type':'application/json'
+      }
+    }).then(res => res.json())
   }
 
 }
