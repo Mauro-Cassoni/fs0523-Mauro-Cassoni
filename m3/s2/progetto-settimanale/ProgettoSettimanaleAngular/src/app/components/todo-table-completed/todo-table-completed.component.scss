@@ -6,17 +6,31 @@ button {
   cursor: pointer;
 }
 
-.bottoni{
+.bottoni {
   display: flex;
   gap: 10px;
 }
 
-.tabella{
-  max-width: 400px;
+button{
+  margin-right: 15px;
 }
 
-.containerTabella{
-  width: 100vw;
+.table {
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+td, th {
+  padding: 15px 25px;
+  text-align: left;
+}
+
+.containerTabella {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 15px;
