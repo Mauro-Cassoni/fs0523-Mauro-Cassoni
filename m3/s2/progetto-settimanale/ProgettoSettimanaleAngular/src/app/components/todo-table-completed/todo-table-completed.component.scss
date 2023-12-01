@@ -21,7 +21,7 @@ button{
 }
 
 tr {
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #f1f1f1;
 }
 
 td, th {
@@ -34,4 +34,10 @@ td, th {
   display: flex;
   justify-content: center;
   margin-top: 15px;
+}
+
+.caricamentoTask {
+  line-height: 40vh;
+  text-align: center;
+  font-size: 1.5rem;
 }

@@ -5,12 +5,13 @@ import { CompletatiComponent } from './pages/completati/completati.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: TodoComponent,
     title: 'Todo',
+    pathMatch: 'full',
   },
   {
-    path:'completati',
+    path: 'completati',
     component: CompletatiComponent,
     title: 'Completati',
   }
