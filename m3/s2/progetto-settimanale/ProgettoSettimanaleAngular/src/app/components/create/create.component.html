@@ -1,10 +1,10 @@
-<div class="formForCreate">
-  <form>
-    <input type="text" required placeholder="Nome" [(ngModel)]="newTodo.title" name="Nome" class="form-control">
-    <button (click)="save()" class="btn btn-success">+</button>
-  </form>
+  <div class="formForCreate">
+    <form>
+      <input type="text" required placeholder="Nome" [(ngModel)]="newTodo.title" name="Nome" class="form-control">
+      <button (click)="save()" class="btn btn-success">+</button>
+    </form>
 
-  <div *ngIf="loading" class="">
-    Salvataggio in corso
+    <div *ngIf="loading" class="">
+      Salvataggio in corso
+    </div>
   </div>
-</div>

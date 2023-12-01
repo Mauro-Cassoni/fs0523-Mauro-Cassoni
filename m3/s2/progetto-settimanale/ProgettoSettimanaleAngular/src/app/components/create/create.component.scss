@@ -1,0 +1,21 @@
+.formForCreate{
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  background-color: #f1f1f1;
+  height: 100px;
+  line-height: 100px;
+}
+
+.formForCreate input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.formForCreate button {
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+}

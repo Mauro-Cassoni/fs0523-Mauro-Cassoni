@@ -1,0 +1,26 @@
+button {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bottoni{
+  display: flex;
+  gap: 10px;
+}
+
+.tabella{
+  // display: flex;
+  max-width: 400px;
+}
+
+.containerTabella{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+

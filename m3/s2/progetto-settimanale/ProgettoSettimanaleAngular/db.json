@@ -20,7 +20,7 @@
       "id": 8
     },
     {
-      "completed": false,
+      "completed": true,
       "title": "prova",
       "id": 9
     },
@@ -31,11 +31,6 @@
     },
     {
       "completed": false,
-      "title": "Emilio",
-      "id": 11
-    },
-    {
-      "completed": false,
       "title": "prova",
       "id": 12
     },
@@ -43,11 +38,6 @@
       "completed": false,
       "title": "Mauro",
       "id": 13
-    },
-    {
-      "completed": false,
-      "title": "Emanuele",
-      "id": 14
     }
   ]
 }

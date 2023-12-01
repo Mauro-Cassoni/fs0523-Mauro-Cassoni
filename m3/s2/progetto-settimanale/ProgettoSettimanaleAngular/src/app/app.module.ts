@@ -24,7 +24,7 @@ import { TodoTableCompletedComponent } from './components/todo-table-completed/t
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
