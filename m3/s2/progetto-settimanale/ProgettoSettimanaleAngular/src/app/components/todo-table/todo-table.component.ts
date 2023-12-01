@@ -16,10 +16,6 @@ export class TodoTableComponent {
     this.todoSvc.getAll().then(todos => this.todos = todos)
   }
 
-  changeDone(todo:ITodo){
 
-    this.todoSvc.changeStatus(todo)
-
-  }
 
 }
