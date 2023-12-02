@@ -1,54 +1,34 @@
 {
   "todo": [
     {
-      "completed": true,
-      "title": "prova",
-      "id": 5
-    },
-    {
-      "completed": false,
-      "title": "prova 2",
-      "id": 6
-    },
-    {
-      "completed": true,
-      "title": "prova",
-      "id": 8
-    },
-    {
-      "completed": true,
-      "title": "prova",
-      "id": 9
-    },
-    {
-      "completed": false,
-      "title": "prova 2",
-      "id": 10
-    },
-    {
-      "completed": false,
-      "title": "prova",
-      "id": 12
-    },
-    {
-      "completed": false,
-      "title": "Mauro",
-      "id": 13
-    },
-    {
-      "completed": false,
-      "title": "prova 2",
-      "id": 14
-    },
-    {
-      "completed": false,
-      "title": "prova 2",
-      "id": 15
-    },
-    {
       "completed": false,
       "title": "Fare la spesa",
       "id": 16
+    },
+    {
+      "completed": false,
+      "title": "Pulire la stufa",
+      "id": 17
+    },
+    {
+      "completed": false,
+      "title": "Pulire la postazione",
+      "id": 18
+    },
+    {
+      "completed": true,
+      "title": "Pulire il PC",
+      "id": 19
+    },
+    {
+      "completed": false,
+      "title": "Ordinare la pizza",
+      "id": 20
+    },
+    {
+      "completed": false,
+      "title": "prova",
+      "id": 27
     }
   ]
 }
