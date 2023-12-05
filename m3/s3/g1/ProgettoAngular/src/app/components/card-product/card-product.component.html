@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;" *ngFor="let p of products">
+  <img [src]="p.thumbnail" class="card-img-top" alt="immagine prodotto">
+  <div class="card-body">
+    <h5 class="card-title">{{p.title}}</h5>
+    <p class="card-text">{{p.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{p.brand}}</li>
+    <li class="list-group-item">{{p.price | currency : 'EUR'}}</li>
+    <li class="list-group-item">{{p.rating}}</li>
+  </ul>
+  <div class="card-body">
+    <button href="#" class="btn btn-warning card-link">Compra</button>
+    <button (click)="aggiungiPreferiti(p)" class="btn btn-primary card-link">Preferiti</button>
+  </div>
+</div>

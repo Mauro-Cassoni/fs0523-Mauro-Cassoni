@@ -1,0 +1,69 @@
+<div class="container my-3">
+  <form [formGroup]="form">
+
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Nome" formControlName="nome">
+      <div *ngIf="!isValid('nome') && isTouched('nome')" class="alert alert-warning">
+        Devi inserire il nome
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Cognome" formControlName="cognome">
+      <div *ngIf="!isValid('cognome') && isTouched('cognome')" class="alert alert-warning">
+        Devi inserire il cognome
+      </div>
+    </div>
+
+    <div formGroupName="authData">
+
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Password" formControlName="password">
+        <div *ngIf="!isValid('authData.password') && isTouched('authData.password')" class="alert alert-warning">
+          Devi inserire la password
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Conferma password" formControlName="confermaPassword">
+        <div *ngIf="!isValid('authData.confermaPassword') && isTouched('authData.confermaPassword')"
+          class="alert alert-warning">
+          {{getCustomMessage('authData.confermaPassword')}}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <div class="form-check" *ngFor="let g of genere">
+        <input [id]="g" [value]="g" class="form-check-input" type="radio" formControlName="genere">
+        <label [for]="g">{{g}}</label>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Immagine profilo" formControlName="immagine">
+      <div *ngIf="!isValid('immagine') && isTouched('immagine')" class="alert alert-warning">
+        Devi inserire l'immagine profilo
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <textarea class="form-control" placeholder="Biografia" formControlName="biografia"></textarea>
+      <div *ngIf="!isValid('biografia') && isTouched('biografia')" class="alert alert-warning">
+        Devi inserire la biografia
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Username" formControlName="username">
+      <div *ngIf="!isValid('username') && isTouched('username')" class="alert alert-warning">
+        Devi inserire l'Username
+      </div>
+    </div>
+
+    <button [disabled]="form.invalid" type="submit" (click)="send()" class="btn btn-primary">Submit</button>
+
+  </form>
+
+</div>
