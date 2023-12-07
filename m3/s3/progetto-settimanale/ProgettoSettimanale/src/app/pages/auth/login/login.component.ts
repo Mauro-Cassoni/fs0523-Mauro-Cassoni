@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ILogin } from '../Models/i-login';
 import { AuthService } from '../../../services/auth.service';
 import { Router } from '@angular/router';
+import { ILogin } from '../Models/i-login';
 
 @Component({
   selector: 'app-login',
@@ -9,14 +9,15 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+
   constructor(
     private authSvc:AuthService,
     private router:Router
     ){}
 
   loginData:ILogin = {
-    email: '',
-    password: ''
+    email: 'mario@rossi.it',
+    password: 'password'
   }
 
   save(){
@@ -25,4 +26,5 @@ export class LoginComponent {
         this.router.navigate(['/dashboard'])
     })
   }
+
 }
