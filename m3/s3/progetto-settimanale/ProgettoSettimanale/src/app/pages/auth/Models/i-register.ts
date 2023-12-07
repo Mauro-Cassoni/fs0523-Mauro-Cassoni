@@ -1,4 +1,4 @@
-export interface IResister {
+export interface IRegister {
   email:string
   password:string
 }

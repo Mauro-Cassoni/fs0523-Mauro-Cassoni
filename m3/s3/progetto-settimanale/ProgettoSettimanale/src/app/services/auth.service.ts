@@ -1,8 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, map, tap } from 'rxjs';
 import { environment } from '../../environments/environment.development';
+import { JwtHelperService } from '@auth0/angular-jwt';
+import { iAccessData } from '../pages/auth/Models/i-access-data';
+import { ILogin } from '../pages/auth/Models/i-login';
+import { IRegister } from '../pages/auth/Models/i-register';
 
 @Injectable({
   providedIn: 'root'
@@ -31,11 +35,11 @@ export class AuthService {
 
 
 
-  signUp(data:iRegister):Observable<iAccessData>{
+  signUp(data:IRegister):Observable<iAccessData>{
     return this.http.post<iAccessData>(this.registerUrl, data)
   }
 
-  login(data:iLogin):Observable<iAccessData>{
+  login(data:ILogin):Observable<iAccessData>{
     return this.http.post<iAccessData>(this.loginUrl, data)
     .pipe(tap(data => {
 

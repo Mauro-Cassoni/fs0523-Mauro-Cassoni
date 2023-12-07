@@ -1,4 +1,10 @@
 {
-  "users":[],
-  "cities":[]
+  "users": [
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$Jl0kft6nZEMXjnPAwbBoReZKvm8vV7IhRmU4nZAu87eZAkf5KyKde",
+      "id": 2
+    }
+  ],
+  "cities": []
 }
