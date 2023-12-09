@@ -1,1 +1,25 @@
-<p>dashboard works!</p>
+<form>
+  <input type="text" [(ngModel)]="cityName" name="cityName" placeholder="Inserisci il nome della città">
+  <button type="button" (click)="search()" class="btn btn-primary">Cerca</button>
+</form>
+
+<div *ngIf="weatherData && weatherData.length">
+  <div *ngFor="let city of weatherData">
+    <button (click)="getCityWeather()" class="btn btn-outline-secondary">Città: {{ city.name }}, Paese: {{ city.country }}</button>
+  </div>
+</div>
+
+
+<!-- <div *ngIf="weatherData && weatherData.length > 0">
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Città</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Meteo</li>
+      <li class="list-group-item">Data</li>
+      <li class="list-group-item">Orario</li>
+    </ul>
+  </div>
+</div> -->
