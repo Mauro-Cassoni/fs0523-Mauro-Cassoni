@@ -4,6 +4,11 @@
       "email": "mario@rossi.it",
       "password": "$2a$10$Jl0kft6nZEMXjnPAwbBoReZKvm8vV7IhRmU4nZAu87eZAkf5KyKde",
       "id": 2
+    },
+    {
+      "email": "maria@rossi.it",
+      "password": "$2a$10$VmemUmRaWKz6mX74lsR3ouQWzgh.VSz6W5ioy.5pGhps0k2Dl1LZO",
+      "id": 3
     }
   ],
   "cities": []
