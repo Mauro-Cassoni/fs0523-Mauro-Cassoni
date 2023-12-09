@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { ICity } from '../pages/auth/Models/i-city';
+import { IWeathers } from '../pages/auth/Models/i-weathers';
+import { environment } from '../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,8 @@ export class MeteoService {
   constructor(private http:HttpClient) { }
 
   private cityUrl = 'http://api.openweathermap.org/geo/1.0/direct';
-  private weatherUrl = 'api.openweathermap.org/data/2.5/forecast';
-  private apiKey = '56b8dd9b017e43d661595c6d7ad0a2a9';
+  private weatherUrl = 'http://api.openweathermap.org/data/2.5/forecast';
+  private apiKey = environment.apiKey;
 
   getGeoData(city:string):Observable<any>{
 
@@ -26,18 +27,18 @@ export class MeteoService {
     return this.http.get(apiUrlWithParams);
   }
 
-  getCityWeather(){
+  getCityWeather(lat:number,lon:number):Observable<IWeathers>{
 
   const params = new HttpParams()
-  // .set('lat', lat)
-  // .set('lon', lon)
+  .set('lat', lat)
+  .set('lon', lon)
   .set('appid', this.apiKey);
 
   const apiUrlWithParams = `${this.weatherUrl}?${params.toString()}`;
   console.log(apiUrlWithParams);
 
 
-return this.http.get(apiUrlWithParams);
+return this.http.get<IWeathers>(apiUrlWithParams);
   }
 
 }

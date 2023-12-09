@@ -3,23 +3,45 @@
   <button type="button" (click)="search()" class="btn btn-primary">Cerca</button>
 </form>
 
-<div *ngIf="weatherData && weatherData.length">
-  <div *ngFor="let city of weatherData">
-    <button (click)="getCityWeather()" class="btn btn-outline-secondary">Città: {{ city.name }}, Paese: {{ city.country }}</button>
+<div *ngIf="cityData && cityData.length">
+  <div *ngFor="let city of cityData">
+    <button (click)="getCityWeather(city.lat,city.lon)" class="btn btn-outline-secondary">Città: {{ city.name }}, Paese:
+      {{ city.country }}</button>
   </div>
 </div>
 
 
-<!-- <div *ngIf="weatherData && weatherData.length > 0">
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title">Città</h5>
+<div *ngIf="weatherData && weatherData.length > 0">
+  <div *ngFor="let cityW of weatherData">
+    <div class="card" style="width: 28rem;">
+      <img src="..." class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{ cityW.city.name }}</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Paese: {{ cityW.city.country }}</li>
+        <li class="list-group-item">Temperature: {{ cityW.list[0].main.temp | number:'1.0-0' }}&#176;C</li>
+        <li class="list-group-item">Description: {{ cityW.list[0].weather[0].description }}</li>
+        <li class="list-group-item">Popolazione: {{ cityW.city.population }}</li>
+      </ul>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Meteo</li>
-      <li class="list-group-item">Data</li>
-      <li class="list-group-item">Orario</li>
-    </ul>
   </div>
-</div> -->
+</div>
+
+<div *ngIf="weatherData && weatherData.length > 0">
+  <div *ngFor="let weather of weatherData">
+    <div *ngFor="let forecast of weather.list">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top">
+        <div class="card-body">
+          <h6>Previsioni del Tempo:</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Data/Ora: {{ forecast.dt_txt | date: 'dd/MM/yyyy HH:mm' }}</li>
+            <li class="list-group-item">{{ forecast.main.temp | number: '1.0-1' }} &#176;C</li>
+            <li class="list-group-item">Descrizione: {{ forecast.weather[0].description }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
