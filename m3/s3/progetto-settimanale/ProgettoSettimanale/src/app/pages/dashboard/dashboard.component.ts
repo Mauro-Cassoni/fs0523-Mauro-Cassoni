@@ -4,6 +4,7 @@ import { MeteoService } from './../../services/meteo.service';
 import { Component } from '@angular/core';
 import { IWeathers } from '../auth/Models/i-weathers';
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -12,14 +13,17 @@ import { IWeathers } from '../auth/Models/i-weathers';
 export class DashboardComponent {
   searchQuery: string = '';
   cityData: ICity[] = [];
-  weatherData: IWeathers[] = [];
-  cityName: any;
+  weatherData!: IWeathers | undefined;
+  cityName: string = '';
+  http: any;
+  authService: any;
+  preferitiService: any;
+  isSearchButtonDisabled: boolean = true;
 
   constructor(private meteoSvc: MeteoService) { }
 
   search() {
-    this.weatherData = [];
-
+    this.weatherData = undefined
     this.meteoSvc.getGeoData(this.cityName)
       .pipe(
         tap((data: ICity[]) => {
@@ -39,22 +43,30 @@ export class DashboardComponent {
     this.meteoSvc.getCityWeather(lat, lon)
       .pipe(
         tap((data: any) => {
-          this.weatherData = [data];
-          this.convertKelvinToCelsius();
+          this.weatherData = data;
         })
       )
       .subscribe();
   }
 
-  convertKelvinToCelsius() {
-    if (this.weatherData && this.weatherData.length > 0) {
-      this.weatherData.forEach(cityW => {
-        if (cityW.list && cityW.list.length > 0) {
-          cityW.list.forEach(weather => {
-            weather.main.temp = weather.main.temp - 273.15;
-          });
-        }
-      });
+  onCityNameChange() {
+    this.isSearchButtonDisabled = this.cityName.trim() === '';
+  }
+
+  getBackgroundColor(weatherType: string): string {
+    switch (weatherType.toLowerCase()) {
+      case 'clear':
+        return 'gold';
+      case 'clouds':
+        return 'lightslategray';
+      case 'rain':
+        return 'powderblue';
+      case 'snow':
+        return 'lightblue';
+      // Aggiungi altri casi per gli altri tipi di tempo
+      default:
+        return 'white'; // Colore di sfondo predefinito
     }
   }
+
 }

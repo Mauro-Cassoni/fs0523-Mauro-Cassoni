@@ -38,6 +38,7 @@ export class MeteoService {
   console.log(apiUrlWithParams);
 
 
+
 return this.http.get<IWeathers>(apiUrlWithParams);
   }
 

@@ -74,25 +74,4 @@ export class AuthService {
       this.autoLogout(accessData.accessToken)
   }
 
-
-  errors(err: any) {
-    switch (err.error) {
-        case "Email and Password are required":
-            return new Error('Email e password obbligatorie');
-            break;
-        case "Email already exists":
-            return new Error('Utente esistente');
-            break;
-        case 'Email format is invalid':
-            return new Error('Email scritta male');
-            break;
-        case 'Cannot find user':
-            return new Error('utente inesistente');
-            break;
-            default:
-        return new Error('Errore');
-            break;
-    }
-  }
-
 }
