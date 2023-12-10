@@ -1,13 +1,24 @@
-.homeBody{
+.homeBody {
   background-image: url(../../../assets/img/8hs349b7tf831.png);
   background-position: center;
   background-size: cover;
-  overflow:hidden;
+  overflow: hidden;
   height: 100vh;
+  position: relative;
 }
 
-.body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.whiteBox,
+.noWhiteBox {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+.whiteBox {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid white;
+  border-radius: 15px;
 }
