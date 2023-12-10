@@ -16,8 +16,8 @@ export class LoginComponent {
     ){}
 
   loginData:ILogin = {
-    email: 'mario@rossi.it',
-    password: 'password'
+    email: '',
+    password: ''
   }
 
   save(){

@@ -15,7 +15,6 @@ export class HeaderComponent implements OnDestroy {
   constructor(private authService: AuthService) {
     this.subscription.add(
       this.isLoggedIn$.subscribe(isLoggedIn => {
-        console.log('AuthService.isLoggedIn$', isLoggedIn);
       })
     );
   }

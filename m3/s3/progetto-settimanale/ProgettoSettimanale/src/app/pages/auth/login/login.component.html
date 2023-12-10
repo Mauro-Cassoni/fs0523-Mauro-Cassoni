@@ -1,10 +1,12 @@
-<h4>Login</h4>
-<form class="row gap-2">
-  <input type="email" [(ngModel)]="loginData.email"
-  name="email" class="form-control" placeholder="Email">
+<div class="container">
 
-  <input type="password" [(ngModel)]="loginData.password"
-  name="password" class="form-control" placeholder="Password">
+  <h4 class="my-4 text-success">Login</h4>
+  <form class="row gap-2">
+    <input type="email" [(ngModel)]="loginData.email" name="email" class="form-control" placeholder="Email">
 
-  <button (click)="save()" class="btn btn-primary">Login</button>
-</form>
+    <input type="password" [(ngModel)]="loginData.password" name="password" class="form-control" placeholder="Password">
+
+    <button (click)="save()" class="btn btn-success">Login</button>
+  </form>
+
+</div>

@@ -1,8 +1,11 @@
-<h4>Registrazione</h4>
-<form class="row gap-2">
-  <input [(ngModel)]="registerData.email" name="email" type="email" class="form-control" placeholder="Email">
-  <input [(ngModel)]="registerData.password" name="password" type="password" class="form-control" placeholder="Password">
-  <button
-  (click)="save()"
-  class="btn btn-primary">Registrami</button>
-</form>
+<div class="container">
+
+  <h4 class="my-4 text-success">Registrazione</h4>
+  <form class="row gap-2">
+    <input [(ngModel)]="registerData.email" name="email" type="email" class="form-control" placeholder="Email">
+    <input [(ngModel)]="registerData.password" name="password" type="password" class="form-control"
+      placeholder="Password">
+    <button (click)="save()" class="btn btn-success">Registrami</button>
+  </form>
+
+</div>
