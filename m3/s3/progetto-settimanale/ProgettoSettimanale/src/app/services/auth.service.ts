@@ -35,16 +35,14 @@ export class AuthService {
     return this.http.post<iAccessData>(this.registerUrl, data)
   }
 
-  login(data:ILogin):Observable<iAccessData>{
+  login(data: ILogin): Observable<iAccessData> {
     return this.http.post<iAccessData>(this.loginUrl, data)
-    .pipe(tap(data => {
-
-      this.authSubject.next(data)
-      localStorage.setItem('accessData',JSON.stringify(data))
-
-
-      this.autoLogout(data.accessToken)
-    }))
+      .pipe(tap(data => {
+        console.log('AuthService - login success', data);
+        this.authSubject.next(data);
+        localStorage.setItem('accessData', JSON.stringify(data));
+        this.autoLogout(data.accessToken);
+      }));
   }
 
   autoLogout(jwt:string){
@@ -60,6 +58,11 @@ export class AuthService {
     this.authSubject.next(null);
     localStorage.removeItem('accessData');
     this.router.navigate(['/auth/login']);
+  }
+
+  getUserId(): string | null {
+    const accessData = this.authSubject.value;
+    return accessData && accessData.user ? accessData.user.id : null;
   }
 
   restoreUser(){

@@ -63,9 +63,8 @@ export class DashboardComponent {
         return 'powderblue';
       case 'snow':
         return 'lightblue';
-      // Aggiungi altri casi per gli altri tipi di tempo
       default:
-        return 'white'; // Colore di sfondo predefinito
+        return 'white';
     }
   }
 
